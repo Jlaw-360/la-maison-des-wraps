@@ -443,6 +443,7 @@ footer {
   display: none;
   /* Hidden on desktop by default */
   position: fixed;
+  top: auto;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -494,8 +495,9 @@ footer {
   .hero {
     flex-direction: column;
     text-align: center;
-    height: auto;
-    padding-top: 100px;
+    min-height: auto;
+    padding-top: 120px;
+    gap: 30px;
   }
 
   .hero-content h1 {
@@ -514,7 +516,7 @@ footer {
   }
 
   .hero-image {
-    margin-top: 40px;
+    margin-top: 0;
   }
 
   .nav-links {
