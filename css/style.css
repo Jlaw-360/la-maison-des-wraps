@@ -146,7 +146,10 @@ nav {
 .hero {
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 0 5%;
   margin-top: 60px;
   /* Offset for nav */
@@ -154,10 +157,9 @@ nav {
 }
 
 .hero-content {
-  flex: 1;
-  max-width: 600px;
+  max-width: 800px;
+  margin: 0 auto;
   z-index: 2;
-  padding-right: 40px;
 }
 
 .hero-content h1 {
@@ -176,6 +178,7 @@ nav {
 
 .hero-btns {
   display: flex;
+  justify-content: center;
   gap: 15px;
   animation: fadeInUp 1.4s ease forwards;
 }
@@ -307,7 +310,11 @@ section {
   color: var(--color-primary-black);
   padding: 40px;
   border-radius: 12px;
-  text-align: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   flex: 1;
   min-width: 250px;
   max-width: 350px;
@@ -320,6 +327,7 @@ section {
   margin-bottom: 5px;
   display: flex;
   align-items: baseline;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -455,4 +463,64 @@ footer {
     display: none;
     /* In a real app, add a hamburger menu */
   }
+
+  body {
+    padding-bottom: 70px;
+    /* Space for the bottom nav */
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+}
+
+/* MOBILE BOTTOM NAVIGATION */
+.mobile-nav {
+  display: none;
+  /* Hidden on desktop by default */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(11, 11, 11, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.mobile-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  gap: 4px;
+  flex: 1;
+}
+
+.mobile-nav a svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  transition: var(--transition);
+}
+
+.mobile-nav a:hover,
+.mobile-nav a:active {
+  color: var(--color-accent-orange);
+}
+
+.mobile-nav a.call-btn {
+  color: var(--color-accent-gold);
+}
+
+.mobile-nav a.call-btn svg {
+  fill: var(--color-accent-gold);
 }
