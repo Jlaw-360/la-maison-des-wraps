@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Title -->
+    <title data-en="Menu | La Maison des Wraps | Drummondville" data-fr="Menu | La Maison des Wraps | Drummondville">
+        Menu | La Maison des Wraps | Drummondville</title>
+    <!-- SEO Meta Description -->
+    <meta name="description"
+        data-en="Discover freshly made Indian-inspired wraps, curry bowls, biryanis, burgers, poutines and more. Order dine-in or takeout at La Maison des Wraps, the best restaurant in Drummondville."
+        data-fr="Découvrez nos wraps d'inspiration indienne, bols de curry, biryanis, burgers, poutines et plus encore. Tout est préparé frais à La Maison des Wraps, le meilleur restaurant indien à Drummondville."
+        content="Découvrez nos wraps d'inspiration indienne, bols de curry, biryanis, burgers, poutines et plus encore. Tout est préparé frais à La Maison des Wraps, le meilleur restaurant indien à Drummondville.">
+    <!-- Local SEO Keywords -->
+    <meta name="keywords"
+        content="Menu Restaurant Drummondville, Indian Food Menu Drummondville, Wraps Drummondville, Livraison Drummondville, La Maison des Wraps Menu">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Menu specific styles */
+        .menu-header {
+            padding: 150px 5% 50px;
+            text-align: center;
+            background: linear-gradient(to bottom, var(--color-dark-gray), var(--color-primary-black));
+        }
+
+        .menu-intro {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: var(--color-gray);
+            font-size: 1.1rem;
+        }
+
+        .menu-section {
+            padding: 60px 5%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .menu-section:nth-child(even) {
+            background-color: var(--color-dark-gray);
+        }
+
+        .menu-section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--color-accent-gold);
+        }
+
+        .menu-section-desc {
+            color: var(--color-gray);
+            margin-bottom: 40px;
+            max-width: 700px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .menu-item {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 3px solid var(--color-accent-orange);
+            transition: var(--transition);
+        }
+
+        .menu-item:hover {
+            transform: translateX(5px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .menu-item h4 {
+            font-family: var(--font-body);
+            font-size: 1.2rem;
+            color: var(--color-white);
+            margin-bottom: 10px;
+        }
+
+        .menu-item p {
+            font-size: 0.9rem;
+            color: var(--color-gray);
+        }
+
+        .menu-image-showcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .menu-image-showcase img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="index.html" class="logo-link"><img src="assets/logo.png" alt="La Maison des Wraps Logo"
+                class="logo-img"></a>
+        <ul class="nav-links">
+            <li><a href="index.html" data-en="Home" data-fr="Accueil">Accueil</a></li>
+            <li><a href="menu.html" data-en="Menu" data-fr="Menu">Menu</a></li>
+            <li><a href="about.html" data-en="About" data-fr="À propos">À propos</a></li>
+            <li><a href="testimonials.html" data-en="Reviews" data-fr="Témoignages">Témoignages</a></li>
+            <li><a href="blog.html" data-en="Blog" data-fr="Blogue">Blogue</a></li>
+            <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
+        </ul>
+        <button class="lang-toggle" id="lang-toggle">EN</button>
+    </nav>
+
+    <!-- MENU HEADER -->
+    <header class="menu-header">
+        <h1 data-en="Order What You're Craving" data-fr="Commandez ce qui vous fait envie">Commandez ce qui vous fait
+            envie</h1>
+        <h2 style="font-size: 1.5rem; color: var(--color-white); margin-bottom: 20px;"
+            data-en="Bold Indian Flavors. Fast-Food Convenience. No Compromise."
+            data-fr="Des saveurs indiennes audacieuses. La commodité du fast food. Zéro compromis.">Des saveurs
+            indiennes audacieuses. La commodité du fast food. Zéro compromis.</h2>
+        <p class="menu-intro"
+            data-en="Freshly made wraps, bold curry bowls, fragrant biryanis, juicy burgers, poutines, and more. Every dish is made to order with real ingredients and authentic Indian spices. We built our menu around one idea: Indian cuisine is incredible, and everyone deserves quick access to it."
+            data-fr="Des wraps faits maison, des bols de curry généreux, des biryanis parfumés, des burgers juteux, des poutines, et bien plus encore. Chaque plat est préparé à la commande avec de vrais ingrédients et des épices indiennes authentiques.">
+            Des wraps faits maison, des bols de curry généreux, des biryanis parfumés, des burgers juteux, des poutines,
+            et bien plus encore. Chaque plat est préparé à la commande avec de vrais ingrédients et des épices indiennes
+            authentiques.</p>
+        <a href="contact.html" class="btn" data-en="Visit Us Today" data-fr="Venez nous voir aujourd'hui">Venez nous
+            voir aujourd'hui</a>
+
+        <div class="menu-image-showcase">
+            <img src="assets/menu_tikka_wrap_1771891890670.png" alt="Delicious Chicken Tikka Wrap">
+            <img src="assets/butter_chicken_bowl_1771891906173.png" alt="Butter Chicken Bowl">
+            <img src="assets/biryani_dish_1771891924549.png" alt="Biryani Dish">
+        </div>
+    </header>
+
+    <!-- GOOGLE REVIEWS BANNER -->
+    <section class="google-reviews-banner"
+        style="background: var(--color-dark-gray); padding: 30px 5%; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px;">
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <h3 style="font-size: 1.8rem; color: var(--color-white); margin: 0;">4.9</h3>
+                <div style="color: var(--color-accent-gold); font-size: 1.2rem;">★★★★★</div>
+            </div>
+            <p style="color: var(--color-gray); margin: 0; font-family: var(--font-body); font-size: 1rem;"
+                data-en="Rated 4.9/5 by our amazing customers" data-fr="Noté 4.9/5 par nos incroyables clients">Noté
+                4.9/5 par nos incroyables clients.</p>
+            <a href="https://share.google/MRakCsmJ0inGWuzvB" target="_blank" class="btn btn-outline"
+                style="display: inline-flex; align-items: center; gap: 10px; padding: 6px 14px; font-size: 0.85rem;"
+                data-en="Read Google Reviews" data-fr="Lisez les avis Google">
+                <svg viewBox="0 0 24 24" width="16" height="16" style="fill: currentColor;">
+                    <path
+                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                        fill="#4285F4" />
+                    <path
+                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                        fill="#34A853" />
+                    <path
+                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                        fill="#FBBC05" />
+                    <path
+                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                        fill="#EA4335" />
+                </svg>
+                Lisez les avis Google
+            </a>
+        </div>
+    </section>
+
+    <!-- WRAPS SECTION -->
+    <section class="menu-section">
+        <h2 class="menu-section-title">Nos Wraps</h2>
+        <div class="menu-grid" style="grid-template-columns: 1fr;">
+            <!-- Displaying the wraps as a pricing table to match image -->
+            <table style="width: 100%; color: var(--color-white); border-collapse: collapse; text-align: left;">
+                <thead>
+                    <tr style="color: var(--color-accent-gold); border-bottom: 1px solid rgba(255,255,255,0.2);">
+                        <th style="padding: 10px 0;">Item</th>
+                        <th>Kebab</th>
+                        <th><span data-en="Tortilla" data-fr="Tortilla">Tortilla</span></th>
+                        <th>Naan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px 0;"><span data-en="Chicken Kebab" data-fr="Kebab au Poulet">Kebab au
+                                Poulet</span></td>
+                        <td>$9.45</td>
+                        <td>$10.45</td>
+                        <td>$11.45</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;"><span data-en="Turkey and Beef Kebab"
+                                data-fr="Kebab à la Dinde et Bœuf">Kebab à la Dinde et Bœuf</span></td>
+                        <td>$9.45</td>
+                        <td>$10.45</td>
+                        <td>$11.45</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;"><span data-en="Chicken Tikka Wrap"
+                                data-fr="Wrap au Poulet Tikka">Wrap au Poulet Tikka</span></td>
+                        <td>$9.45</td>
+                        <td>$10.45</td>
+                        <td>$11.45</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;"><span data-en="Chicken Masala Wrap"
+                                data-fr="Wrap au Poulet Masala">Wrap au Poulet Masala</span></td>
+                        <td>$9.45</td>
+                        <td>$10.45</td>
+                        <td>$11.45</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;"><span data-en="Steak Wrap, Cheese Wrap"
+                                data-fr="Wrap au Steak Fromage">Wrap au Steak Fromage</span></td>
+                        <td>$10.45 <small style="display:block; color:var(--color-gray)">Trio $15.75</small></td>
+                        <td>$11.45 <small style="display:block; color:var(--color-gray)">Trio $16.75</small></td>
+                        <td>$12.45 <small style="display:block; color:var(--color-gray)">Trio $17.75</small></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;"><span data-en="Vegetarian Wrap" data-fr="Wrap Végétarien">Wrap
+                                Végétarien</span></td>
+                        <td>$9.45</td>
+                        <td>$10.45</td>
+                        <td>$11.45</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;"><span data-en="Crispy Chicken Wrap"
+                                data-fr="Wrap Poulet Croustillant">Wrap Poulet Croustillant</span></td>
+                        <td>$9.45</td>
+                        <td>$10.45</td>
+                        <td>$11.45</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;"><span data-en="Mixed Wrap" data-fr="Wrap Mix">Wrap Mix</span>
+                            <small style="color:var(--color-accent-orange)" data-en="(2 Meats of your Choice)"
+                                data-fr="(2 Viandes au Choix)">(2 Viandes au Choix)</small>
+                        </td>
+                        <td><span data-en="Alone" data-fr="Seul">Seul</span> $10.95 <small
+                                style="display:block; color:var(--color-gray)">Trio $16.25</small></td>
+                        <td>$11.95 <small style="display:block; color:var(--color-gray)">Trio $17.25</small></td>
+                        <td>$12.95 <small style="display:block; color:var(--color-gray)">Trio $18.25</small></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="text-align: right; color: var(--color-gray); margin-top: 10px;"
+                data-en="Extra Egg: $0.99 | Extra Cheddar Cheese: $0.99"
+                data-fr="Extra Œuf : 0.99$ | Extra Fromage Cheddar : 0.99$">Extra Œuf : 0.99$ | Extra Fromage Cheddar :
+                0.99$</p>
+            <p style="text-align: right; color: var(--color-gray); margin-top: 10px;"><strong data-en="Trio:"
+                    data-fr="Trio:">Trio:</strong> <span data-en="Fries or Potato Rings (Poutines) + Drink"
+                    data-fr="Frites ou Rondelles de Patate (Poutines) + Boisson">Frites ou Rondelles de Patate
+                    (Poutines) + Boisson</span></p>
+
+            <h3 style="color: var(--color-accent-orange); margin-top: 40px; margin-bottom: 20px;"
+                data-en="PANINI OF YOUR CHOICE" data-fr="PANINI AU CHOIX">PANINI AU CHOIX</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+                <table
+                    style="flex: 1; min-width: 300px; color: var(--color-white); border-collapse: collapse; text-align: left;">
+                    <tbody>
+                        <tr>
+                            <td style="padding: 5px 0; border-bottom: 1px dashed rgba(255,255,255,0.2);"
+                                data-en="CHICKEN TIKKA" data-fr="Poulet Tikka">Poulet Tikka</td>
+                            <td rowspan="6" style="text-align: center; vertical-align: middle; padding-left: 20px;">
+                                <div
+                                    style="border: 1px solid var(--color-accent-orange); padding: 10px; border-radius: 4px; margin-bottom: 10px;">
+                                    <span data-en="ALONE" data-fr="SEUL">SEUL</span><br>9.75 $
+                                </div>
+                                <div
+                                    style="border: 1px solid var(--color-accent-orange); padding: 10px; border-radius: 4px;">
+                                    TRIO<br>14.95 $</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px 0; border-bottom: 1px dashed rgba(255,255,255,0.2);"
+                                data-en="CHICKEN MASALA" data-fr="Poulet Masala">Poulet Masala</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px 0; border-bottom: 1px dashed rgba(255,255,255,0.2);" data-en="THON"
+                                data-fr="Thon">Thon</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px 0; border-bottom: 1px dashed rgba(255,255,255,0.2);"
+                                data-en="SALMON + 1.00$" data-fr="Saumon + 1.00$">Saumon + 1.00$</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px 0; border-bottom: 1px dashed rgba(255,255,255,0.2);"
+                                data-en="CHEESE" data-fr="Fromage">Fromage</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px 0;" data-en="MINCED MEAT" data-fr="Viande Hachée">Viande Hachée</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="flex: 1; min-width: 300px; text-align: center;">
+                    <img src="assets/panini.jpg" alt="Panini au Choix"
+                        style="width: 100%; max-width: 400px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BREADS & SAUCES SECTION -->
+    <section class="menu-section">
+        <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2 class="menu-section-title" data-en="Breads" data-fr="Pains">Pains</h2>
+                <p class="menu-section-desc" data-en="All our breads are made fresh in-house daily."
+                    data-fr="Tous nos pains sont faits frais dans notre cuisine, chaque jour.">Tous nos pains sont faits
+                    frais dans notre cuisine, chaque jour.</p>
+                <div class="menu-grid" style="grid-template-columns: 1fr;">
+                    <div class="menu-item">
+                        <h4>Naan</h4>
+                        <p data-en="Soft, pillowy Indian flatbread baked in-house."
+                            data-fr="Pain indien moelleux cuit maison.">Pain indien moelleux cuit maison.</p>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Pain Kebab</h4>
+                        <p data-en="Traditional kebab-style bread, fresh every day."
+                            data-fr="Pain style kebab traditionnel, toujours frais.">Pain style kebab traditionnel,
+                            toujours frais.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <h2 class="menu-section-title" data-en="Sauces" data-fr="Sauces">Sauces</h2>
+                <p class="menu-section-desc"
+                    data-en="Pick your flavor, or mix them up. Every sauce is made to complement our Indian-inspired menu."
+                    data-fr="Choisissez votre saveur, ou combinez-les. Chaque sauce est faite pour accompagner nos plats d'inspiration indienne.">
+                    Choisissez votre saveur, ou combinez-les. Chaque sauce est faite pour accompagner nos plats
+                    d'inspiration indienne.</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                    <span class="lang-toggle" style="cursor:default">Mayo</span>
+                    <span class="lang-toggle" style="cursor:default">Ketchup</span>
+                    <span class="lang-toggle" style="cursor:default">Moutarde</span>
+                    <span class="lang-toggle" style="cursor:default">Harissa</span>
+                    <span class="lang-toggle" style="cursor:default">Maison</span>
+                    <span class="lang-toggle" style="cursor:default">Verte</span>
+                    <span class="lang-toggle" style="cursor:default">Sauce à l'ail</span>
+                    <span class="lang-toggle" style="cursor:default">Thaï</span>
+                    <span class="lang-toggle" style="cursor:default">BBQ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRY BOWLS SECTION -->
+    <section class="menu-section">
+        <h2 class="menu-section-title" data-en="Curry Bowls" data-fr="Bols de Curry">Bols de Curry</h2>
+        <p class="menu-section-desc"
+            data-en="Rich, fragrant, and deeply satisfying — our curry bowls are slow-seasoned with traditional Indian spices and served over fluffy basmati rice."
+            data-fr="Riches, parfumés et profondément satisfaisants — nos bols de curry mijotent dans des épices indiennes traditionnelles et sont servis sur du riz basmati moelleux.">
+            Riches, parfumés et profondément satisfaisants — nos bols de curry mijotent dans des épices indiennes
+            traditionnelles et sont servis sur du riz basmati moelleux.</p>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 data-en="Butter Chicken" data-fr="Poulet au Beurre">Poulet au Beurre</h4>
+                    <span style="color: var(--color-accent-gold); font-weight: bold;">$17.75</span>
+                </div>
+                <p data-en="Grilled pieces of chicken tikka in a creamy butter and almond sauce."
+                    data-fr="Morceaux de poulet tikka grillé dans une sauce crémeuse au beurre et aux amandes.">
+                    Morceaux de poulet tikka grillé dans une sauce crémeuse au beurre et aux amandes.</p>
+            </div>
+            <div class="menu-item">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 data-en="Curried Chicken" data-fr="Poulet Curry">Poulet Curry</h4>
+                    <span style="color: var(--color-accent-gold); font-weight: bold;">$17.75</span>
+                </div>
+                <p data-en="Chicken simmered in our special curry sauce with Indian herbs and spices."
+                    data-fr="Poulet mijoté dans notre sauce curry spéciale aux herbes et épices indiennes.">
+                    Poulet mijoté dans notre sauce curry spéciale aux herbes et épices indiennes.</p>
+            </div>
+            <div class="menu-item">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 data-en="Chicken Malai Tikka" data-fr="Poulet Malai Tikka">Poulet Malai Tikka</h4>
+                    <span style="color: var(--color-accent-gold); font-weight: bold;">$17.75</span>
+                </div>
+                <p data-en="Tandoori-cooked golden chicken breast, prepared in a cream and cheese sauce."
+                    data-fr="Blanc de volaille doré au tandoor, préparé dans une sauce à la crème et au fromage.">
+                    Blanc de volaille doré au tandoor, préparé dans une sauce à la crème et au fromage.</p>
+            </div>
+            <div class="menu-item">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 data-en="Shrimp curry" data-fr="Curry au crevette">Curry au crevette</h4>
+                    <span style="color: var(--color-accent-gold); font-weight: bold;">$17.75</span>
+                </div>
+                <p data-en="Marinated prawns, cooked in a curry sauce with spices."
+                    data-fr="Crevettes marinées, cuit dans une sauce au curry avec épices.">
+                    Crevettes marinées, cuit dans une sauce au curry avec épices.</p>
+            </div>
+            <div class="menu-item">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 data-en="Palak Chicken" data-fr="Poulet Palak">Poulet Palak</h4>
+                    <span style="color: var(--color-accent-gold); font-weight: bold;">$17.75</span>
+                </div>
+                <p data-en="Spinach and chicken cooked with butter, ginger, garlic and spices."
+                    data-fr="Épinard et poulet cuisinés au beurre, gingembre, ail et épices.">
+                    Épinard et poulet cuisinés au beurre, gingembre, ail et épices.</p>
+            </div>
+        </div>
+
+        <h3 class="menu-section-title" style="margin-top: 40px; font-size: 1.5rem;" data-en="Vegetarian Bowls"
+            data-fr="Bols Végétarien">Bols Végétarien</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 data-en="Paneer Makhani" data-fr="Panneer Makhani">Panneer Makhani</h4>
+                    <span style="color: var(--color-accent-gold); font-weight: bold;">$15.75</span>
+                </div>
+                <p data-en="Paneer (homemade cheese) cooked in a creamy sauce made with tomatoes and Indian spices."
+                    data-fr="Paneer (fromage maison) cuit dans une sauce crémeuse à base de tomates et d'épices indiennes.">
+                    Paneer (fromage maison) cuit dans une sauce crémeuse à base de tomates et d'épices indiennes.</p>
+            </div>
+            <div class="menu-item">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 data-en="Palak Paneer" data-fr="Palak Paneer">Palak Paneer</h4>
+                    <span style="color: var(--color-accent-gold); font-weight: bold;">$15.75</span>
+                </div>
+                <p data-en="Spinach and paneer cooked with butter, ginger, garlic and spices."
+                    data-fr="Épinard et paneer cuisinés au beurre, gingembre, ail et épices.">
+                    Épinard et paneer cuisinés au beurre, gingembre, ail et épices.</p>
+            </div>
+        </div>
+
+        <h3 class="menu-section-title" style="margin-top: 40px; font-size: 1.5rem;" data-en="Combos" data-fr="Combos">
+            Combos</h3>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <h4 style="color: var(--color-accent-orange);" data-en="Curry Bowl Combo"
+                    data-fr="Combo Nos Bols Curry">Combo Nos Bols Curry</h4>
+                <ul
+                    style="color: var(--color-gray); font-size: 0.95rem; line-height: 1.8; list-style-type: none; padding-left: 0; margin-top: 15px;">
+                    <li
+                        style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 5px; margin-bottom: 5px;">
+                        <span data-en="COMBO 1 (RICE)" data-fr="COMBO 1 (RIZ)">COMBO 1 (RIZ)</span> <span
+                            style="color: var(--color-white);">$21.50</span>
+                    </li>
+                    <li
+                        style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 5px; margin-bottom: 5px;">
+                        <span data-en="COMBO 2 (RICE + Naan Cheese)" data-fr="COMBO 2 (RIZ + Naan Fromage)">COMBO 2 (RIZ
+                            + Naan Fromage)</span> <span style="color: var(--color-white);">$24.50</span>
+                    </li>
+                    <li style="display: flex; justify-content: space-between;">
+                        <span data-en="COMBO 3 (Rice + Naan Cheese + Drink)"
+                            data-fr="COMBO 3 (RIZ + Naan Fromage + Boisson)">COMBO 3 (RIZ + Naan Fromage +
+                            Boisson)</span> <span style="color: var(--color-white);">$25.50</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-item">
+                <h4 style="color: #4CAF50;" data-en="Vegetarian Bowl Combo" data-fr="Combo Bols Végétarien">Combo Bols
+                    Végétarien</h4>
+                <ul
+                    style="color: var(--color-gray); font-size: 0.95rem; line-height: 1.8; list-style-type: none; padding-left: 0; margin-top: 15px;">
+                    <li
+                        style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 5px; margin-bottom: 5px;">
+                        <span data-en="COMBO 1 (RICE)" data-fr="COMBO 1 (RIZ)">COMBO 1 (RIZ)</span> <span
+                            style="color: var(--color-white);">$18.85</span>
+                    </li>
+                    <li
+                        style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 5px; margin-bottom: 5px;">
+                        <span data-en="COMBO 2 (RIZ + Naan Cheese)" data-fr="COMBO 2 (RIZ + Naan Fromage)">COMBO 2 (RIZ
+                            + Naan Fromage)</span> <span style="color: var(--color-white);">$21.85</span>
+                    </li>
+                    <li style="display: flex; justify-content: space-between;">
+                        <span data-en="COMBO 3 (Rice + Naan Cheese + Drink)"
+                            data-fr="COMBO 3 (RIZ + Naan Fromage + Boisson)">COMBO 3 (RIZ + Naan Fromage +
+                            Boisson)</span> <span style="color: var(--color-white);">$22.85</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- BIRYANI SECTION -->
+    <section class="menu-section">
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2 class="menu-section-title">Biryani</h2>
+                <p class="menu-section-desc"
+                    data-en="A subtle blend of basmati rice, spices, almonds, raisins and cashew nuts, served with chicken or shrimp."
+                    data-fr="Un mélange subtil de riz basmati, d'épices, d'amandes, de raisins et de noix de cajou, accompagné de poulet ou de crevettes.">
+                    Un mélange subtil de riz basmati, d'épices, d'amandes, de raisins et de noix de cajou, accompagné de
+                    poulet
+                    ou de crevettes.</p>
+                <div class="menu-grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
+                    <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <h4 data-en="Chicken Biryani" data-fr="Biryani Poulet">Biryani Poulet</h4>
+                        </div>
+                        <div style="color: var(--color-accent-gold); font-weight: bold; font-size: 1.2rem;">$18.95</div>
+                    </div>
+                    <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <h4 data-en="Shrimp Biryani" data-fr="Biryani Crevette">Biryani Crevette</h4>
+                        </div>
+                        <div style="color: var(--color-accent-gold); font-weight: bold; font-size: 1.2rem;">$19.25</div>
+                    </div>
+                </div>
+                <p class="menu-section-desc" style="margin-top:20px; color: var(--color-accent-orange);"
+                    data-en="Accompaniment: Raita* (whipped yogurt with cucumber, tomato, onion and spices.)"
+                    data-fr="Raita* (yaourt fouetté aux concombre, tomate, oignon et épices.)">
+                    Raita* (yaourt fouetté aux concombre, tomate, oignon et épices.)</p>
+            </div>
+            <div style="flex: 1; min-width: 300px; text-align: center;">
+                <img src="assets/biryani_new.jpg" alt="Biryani"
+                    style="width: 100%; max-width: 400px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+            </div>
+        </div>
+    </section>
+
+    <!-- ASSIETTES SECTION -->
+    <section class="menu-section">
+        <h2 class="menu-section-title" data-en="Our Plates" data-fr="Nos Assiettes">Nos Assiettes</h2>
+        <div class="menu-grid" style="grid-template-columns: 1fr;">
+            <table
+                style="width: 100%; max-width: 600px; color: var(--color-white); border-collapse: collapse; text-align: left;">
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px 0; border-bottom: 1px dashed rgba(255,255,255,0.1);"><span
+                                data-en="Chicken Kebab Plate" data-fr="Assiette Kebab au Poulet">Assiette Kebab au
+                                Poulet</span></td>
+                        <td style="text-align: right; font-weight: bold; color: var(--color-accent-gold);">$17.99</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0; border-bottom: 1px dashed rgba(255,255,255,0.1);"><span
+                                data-en="Turkey and Beef Kebab Platter" data-fr="Assiette Kebab Dinde et Bœuf">Assiette
+                                Kebab Dinde et Bœuf</span></td>
+                        <td style="text-align: right; font-weight: bold; color: var(--color-accent-gold);">$17.99</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0; border-bottom: 1px dashed rgba(255,255,255,0.1);"><span
+                                data-en="Chicken Tikka Plate" data-fr="Assiette Poulet Tikka">Assiette Poulet
+                                Tikka</span></td>
+                        <td style="text-align: right; font-weight: bold; color: var(--color-accent-gold);">$17.99</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0; border-bottom: 1px dashed rgba(255,255,255,0.1);"><span
+                                data-en="Chicken Masala Plate" data-fr="Assiette Poulet Masala">Assiette Poulet
+                                Masala</span></td>
+                        <td style="text-align: right; font-weight: bold; color: var(--color-accent-gold);">$17.99</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0;"><span data-en="Mixed Plate" data-fr="Assiette Mix">Assiette
+                                Mix</span> <small style="color:var(--color-accent-orange)"
+                                data-en="(2 meats of your choice)" data-fr="(2 viandes au choix)">(2 viandes au
+                                choix)</small></td>
+                        <td style="text-align: right; font-weight: bold; color: var(--color-accent-gold);">$20.25</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div
+                style="background: rgba(255,87,34,0.1); border-left: 3px solid var(--color-accent-orange); padding: 15px; margin-top: 20px;">
+                <h4 style="color: var(--color-accent-gold); margin-bottom: 5px;" data-en="Served With:"
+                    data-fr="Servi Avec :">Servi Avec :</h4>
+                <p style="color: var(--color-white); font-size: 0.95rem;"
+                    data-en="Choice of Salad | French Fries or Garlic Potato | Basmati Rice | Kebab Bread"
+                    data-fr="Salade au Choix | Frites ou Patate à l'Ail | Riz Basmati | Pain Kebab">Salade au Choix |
+                    Frites ou Patate à l'Ail | Riz Basmati | Pain Kebab</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BURGERS SECTION -->
+    <section class="menu-section">
+        <h2 class="menu-section-title" data-en="Burgers" data-fr="Nos Burger">Nos Burger</h2>
+        <div class="menu-grid">
+            <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4 data-en="Cheese Burger" data-fr="Cheese Burger">Cheese Burger</h4>
+                </div>
+                <div style="text-align: right;"><span style="color: var(--color-gray); font-size: 0.9rem;"
+                        data-en="Single" data-fr="Seul">Seul</span>
+                    $6.95<br><span style="color: var(--color-accent-orange); font-size: 0.9rem;">Trio</span> $12.25
+                </div>
+            </div>
+            <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4 data-en="Double Cheese Burger" data-fr="Double Cheese Burger">Double Cheese Burger</h4>
+                </div>
+                <div style="text-align: right;"><span style="color: var(--color-gray); font-size: 0.9rem;"
+                        data-en="Single" data-fr="Seul">Seul</span>
+                    $8.65<br><span style="color: var(--color-accent-orange); font-size: 0.9rem;">Trio</span> $13.95
+                </div>
+            </div>
+            <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4 data-en="Chicken Burger" data-fr="Burger de Poulet">Burger de Poulet</h4>
+                </div>
+                <div style="text-align: right;"><span style="color: var(--color-gray); font-size: 0.9rem;"
+                        data-en="Single" data-fr="Seul">Seul</span>
+                    $7.25<br><span style="color: var(--color-accent-orange); font-size: 0.9rem;">Trio</span> $12.45
+                </div>
+            </div>
+            <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4 data-en="Vegetarian Burger" data-fr="Burger Végétarien">Burger Végétarien</h4>
+                </div>
+                <div style="text-align: right;"><span style="color: var(--color-gray); font-size: 0.9rem;"
+                        data-en="Single" data-fr="Seul">Seul</span>
+                    $6.95<br><span style="color: var(--color-accent-orange); font-size: 0.9rem;">Trio</span> $12.25
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POUTINES SECTION -->
+    <section class="menu-section">
+        <h2 class="menu-section-title" data-en="Our Poutines" data-fr="Nos Poutines">Nos Poutines</h2>
+        <h4 style="color: var(--color-accent-gold); margin-bottom: 20px;"
+            data-en="Sauce of your choice: Brown Sauce or Butter Chicken Sauce"
+            data-fr="Sauce aux Choix: Sauce Brune ou Sauce Poulet au Beurre">Sauce aux Choix: Sauce Brune ou Sauce
+            Poulet au Beurre</h4>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+            <div style="flex: 1; min-width: 300px;">
+                <h3 style="color: var(--color-accent-orange); margin-bottom: 15px; border-bottom: 1px solid rgba(255,87,34,0.3); padding-bottom: 10px;"
+                    data-en="Poutine with Fries" data-fr="Poutine avec Frites">Poutine avec Frites</h3>
+                <table
+                    style="width: 100%; color: var(--color-white); border-collapse: collapse; text-align: left; font-size: 0.95rem;">
+                    <thead>
+                        <tr style="color: var(--color-gray); border-bottom: 1px solid rgba(255,255,255,0.1);">
+                            <th style="padding: 8px 0;">Item</th>
+                            <th><span data-en="Little" data-fr="Petit">Petit</span></th>
+                            <th>Grand</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.05);"><span
+                                    data-en="Regular Poutine" data-fr="Poutine Régulière">Poutine Régulière</span></td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$11.75</td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$14.85</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.05);"><span
+                                    data-en="Chicken Kebab Poutine" data-fr="Poutine Kebab au Poulet">Poutine Kebab au
+                                    Poulet</span></td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$14.95</td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$17.95</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.05);"><span
+                                    data-en="Turkey and Beef Kebab Poutine"
+                                    data-fr="Poutine Kebab Dinde et Bœuf">Poutine Kebab Dinde et Bœuf</span></td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$14.95</td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$17.95</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.05);"><span
+                                    data-en="Poutine Chicken Tikka" data-fr="Poutine Poulet Tikka">Poutine Poulet
+                                    Tikka</span></td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$15.45</td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$18.45</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.05);"><span
+                                    data-en="Poutine Chicken Masala" data-fr="Poutine Poulet Masala">Poutine Poulet
+                                    Masala</span></td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$15.45</td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$18.45</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0;"><span data-en="Poutine Chicken Popcorn"
+                                    data-fr="Poutine Poulet Popcorn">Poutine Poulet Popcorn</span></td>
+                            <td>$14.95</td>
+                            <td>$17.95</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="flex: 1; min-width: 300px;">
+                <h3 style="color: var(--color-accent-orange); margin-bottom: 15px; border-bottom: 1px solid rgba(255,87,34,0.3); padding-bottom: 10px;"
+                    data-en="Poutine with Garlic Potatoes" data-fr="Poutine avec Patates à l'ail">Poutine avec Patates à
+                    l'ail</h3>
+                <table
+                    style="width: 100%; color: var(--color-white); border-collapse: collapse; text-align: left; font-size: 0.95rem;">
+                    <thead>
+                        <tr style="color: var(--color-gray); border-bottom: 1px solid rgba(255,255,255,0.1);">
+                            <th style="padding: 8px 0;">Item</th>
+                            <th><span data-en="Little" data-fr="Petit">Petit</span></th>
+                            <th>Grand</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.05);"><span
+                                    data-en="Regular Poutine" data-fr="Poutine Régulière">Poutine Régulière</span></td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$12.95</td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$15.95</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.05);"><span
+                                    data-en="Chicken Kebab Poutine" data-fr="Poutine Kebab au Poulet">Poutine Kebab au
+                                    Poulet</span></td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$15.95</td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$18.95</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.05);"><span
+                                    data-en="Turkey and Beef Kebab Poutine"
+                                    data-fr="Poutine Kebab Dinde et Bœuf">Poutine Kebab Dinde et Bœuf</span></td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$15.95</td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$18.95</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.05);"><span
+                                    data-en="Poutine Chicken Tikka" data-fr="Poutine Poulet Tikka">Poutine Poulet
+                                    Tikka</span></td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$16.45</td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$19.45</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0; border-bottom: 1px dashed rgba(255,255,255,0.05);"><span
+                                    data-en="Poutine Chicken Masala" data-fr="Poutine Poulet Masala">Poutine Poulet
+                                    Masala</span></td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$16.45</td>
+                            <td style="border-bottom: 1px dashed rgba(255,255,255,0.05);">$19.45</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 8px 0;"><span data-en="Poutine Chicken Popcorn"
+                                    data-fr="Poutine Poulet Popcorn">Poutine Poulet Popcorn</span></td>
+                            <td>$15.95</td>
+                            <td>$18.95</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- SALADES SECTION -->
+    <section class="menu-section">
+        <h2 class="menu-section-title" data-en="Our Salads" data-fr="Nos Salades">Nos Salades</h2>
+        <div class="menu-grid">
+            <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4 data-en="Homemade Salad" data-fr="Salade Maison">Salade Maison</h4>
+                </div>
+            </div>
+            <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4 data-en="Macaroni Salad" data-fr="Salade Macaroni">Salade Macaroni</h4>
+                </div>
+            </div>
+            <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4 data-en="Cabbage Salad" data-fr="Salade Chou">Salade Chou</h4>
+                </div>
+            </div>
+            <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4 data-en="Stir-fried Vegetable Noodles" data-fr="Nouilles aux Légumes Sautés">Nouilles aux
+                        Légumes Sautés</h4>
+                </div>
+            </div>
+        </div>
+        <p style="color: var(--color-gray); margin-top: 15px; font-style: italic;" data-en="Prices included in plates*"
+            data-fr="Prix inclus dans les assiettes*">Prix inclus dans les assiettes*</p>
+    </section>
+
+    <!-- SIDES & EXTRAS SECTION -->
+    <section class="menu-section">
+        <h2 class="menu-section-title" data-en="Next To" data-fr="À Côté">À Côté</h2>
+        <div class="menu-grid">
+            <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4 data-en="Fries" data-fr="Frites">Frites</h4>
+                </div>
+                <div style="text-align: right;"><span style="color: var(--color-gray); font-size: 0.9rem;"
+                        data-en="Small" data-fr="Petite">Petite</span>
+                    $5.95<br><span style="color: var(--color-accent-orange); font-size: 0.9rem;" data-en="Big"
+                        data-fr="Grande">Grande</span> $8.00
+                </div>
+            </div>
+            <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4 data-en="Onion Rings" data-fr="Rondelles d'Oignons">Rondelles d'Oignons</h4>
+                </div>
+                <div style="color: var(--color-accent-gold); font-weight: bold;">$6.95</div>
+            </div>
+            <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4 data-en="Nuggets" data-fr="Nuggets">Nuggets</h4>
+                </div>
+                <div style="text-align: right;"><span style="color: var(--color-gray); font-size: 0.8rem;">6 PCS</span>
+                    $7.90<br><span style="color: var(--color-gray); font-size: 0.8rem;">10 PCS</span> $11.90<br><span
+                        style="color: var(--color-gray); font-size: 0.8rem;">20 PCS</span> $16.90</div>
+            </div>
+            <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4 data-en="Kebab Bread" data-fr="Pain Kebab">Pain Kebab</h4>
+                </div>
+                <div style="color: var(--color-accent-gold); font-weight: bold;">$1.10</div>
+            </div>
+
+            <div class="menu-item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <h4 data-en="Garlic Potato" data-fr="Patate à L'ail">Patate à L'ail</h4>
+                </div>
+                <div style="text-align: right;"><span style="color: var(--color-gray); font-size: 0.9rem;"
+                        data-en="Average" data-fr="Moyenne">Moyenne</span> $7.95<br><span
+                        style="color: var(--color-accent-orange); font-size: 0.9rem;" data-en="Big"
+                        data-fr="Grande">Grande</span> $9.95</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DRINKS & DESSERTS SECTION -->
+    <section class="menu-section">
+        <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2 class="menu-section-title" data-en="Drinks" data-fr="Boissons">Boissons</h2>
+                <div class="menu-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
+                    <div class="menu-item" style="text-align: center;">
+                        <h4 data-en="Water" data-fr="Eau">Eau</h4>
+                        <div
+                            style="color: var(--color-accent-gold); font-weight: bold; font-size: 1.2rem; margin-top: 10px;">
+                            $1.75</div>
+                    </div>
+                    <div class="menu-item" style="text-align: center;">
+                        <h4 data-en="Mango OR Rose Lassi" data-fr="Lassi Mangue OU Rose">Lassi Mangue OU Rose</h4>
+                        <div
+                            style="color: var(--color-accent-gold); font-weight: bold; font-size: 1.2rem; margin-top: 10px;">
+                            $4.75</div>
+                    </div>
+                    <div class="menu-item" style="text-align: center;">
+                        <h4 data-en="Bottle" data-fr="Bouteille">Bouteille</h4>
+                        <div
+                            style="color: var(--color-accent-gold); font-weight: bold; font-size: 1.2rem; margin-top: 10px;">
+                            $3.25</div>
+                    </div>
+                    <div class="menu-item" style="text-align: center;">
+                        <h4 data-en="Can" data-fr="Canette">Canette</h4>
+                        <div
+                            style="color: var(--color-accent-gold); font-weight: bold; font-size: 1.2rem; margin-top: 10px;">
+                            $2.45</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="flex: 1; min-width: 300px;">
+                <h2 class="menu-section-title" data-en="Desserts" data-fr="Desserts">Desserts</h2>
+                <div class="menu-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
+                    <div class="menu-item" style="text-align: center;">
+                        <h4 data-en="Rose Jamun" data-fr="Gulab Jamun">Gulab Jamun</h4>
+                        <div
+                            style="color: var(--color-accent-gold); font-weight: bold; font-size: 1.2rem; margin-top: 10px;">
+                            $4.99</div>
+                    </div>
+                    <div class="menu-item" style="text-align: center;">
+                        <h4 data-en="Ras Malai" data-fr="Ras Malai">Ras Malai</h4>
+                        <div
+                            style="color: var(--color-accent-gold); font-weight: bold; font-size: 1.2rem; margin-top: 10px;">
+                            $4.99</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KIDS MENU SECTION -->
+    <section class="menu-section" style="margin-bottom: 50px;">
+        <h2 class="menu-section-title" data-en="Children's Menu" data-fr="Menu Enfant">Menu Enfant</h2>
+        <div class="menu-grid" style="grid-template-columns: 1fr;">
+            <div class="menu-item"
+                style="display: flex; justify-content: space-between; align-items: center; max-width: 600px;">
+                <div>
+                    <h4 data-en="Nuggets + Fries + Drink" data-fr="Nuggets + Frites + Boisson">Nuggets + Frites +
+                        Boisson</h4>
+                </div>
+                <div style="color: var(--color-accent-gold); font-weight: bold; font-size: 1.2rem;">$9.25</div>
+            </div>
+            <div class="menu-item"
+                style="display: flex; justify-content: space-between; align-items: center; max-width: 600px;">
+                <div>
+                    <h4 data-en="Small Plate of Chicken + Fries + Drink"
+                        data-fr="Petite Assiette Poulet + Frites + Boisson">Petite Assiette Poulet + Frites + Boisson
+                    </h4>
+                </div>
+                <div style="color: var(--color-accent-gold); font-weight: bold; font-size: 1.2rem;">$9.75</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 La Maison des Wraps. Tous droits réservés / All rights reserved. By JLAW 360 Marketing.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
