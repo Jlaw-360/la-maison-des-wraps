@@ -123,6 +123,20 @@
             border-radius: 8px;
         }
     </style>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lamaisondeswraps.com/contact.html">
+    <meta property="og:title" content="Contact | La Maison des Wraps | Drummondville">
+    <meta property="og:description" content="Contactez La Maison des Wraps à Drummondville, Québec. Trouvez nos heures d'ouverture, notre adresse et contactez le meilleur restaurant indien du coin.">
+    <meta property="og:image" content="https://lamaisondeswraps.com/assets/hero_plate.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lamaisondeswraps.com/contact.html">
+    <meta property="twitter:title" content="Contact | La Maison des Wraps | Drummondville">
+    <meta property="twitter:description" content="Contactez La Maison des Wraps à Drummondville, Québec. Trouvez nos heures d'ouverture, notre adresse et contactez le meilleur restaurant indien du coin.">
+    <meta property="twitter:image" content="https://lamaisondeswraps.com/assets/hero_plate.jpg">
 </head>
 
 <body>
@@ -193,22 +207,25 @@
             </table>
         </div>
 
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent!');">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            <input type="hidden" name="subject" value="New Contact Form Message (La Maison des Wraps)">
+            <input type="hidden" name="redirect" value="https://lamaisondeswraps.com/contact.html">
             <div class="form-group">
                 <label data-en="Full Name" data-fr="Nom complet">Nom complet</label>
-                <input type="text" required>
+                <input type="text" name="name" required>
             </div>
             <div class="form-group">
                 <label data-en="Email" data-fr="Courriel">Courriel</label>
-                <input type="email" required>
+                <input type="email" name="email" required>
             </div>
             <div class="form-group">
                 <label data-en="Phone (optional)" data-fr="Téléphone (facultatif)">Téléphone (facultatif)</label>
-                <input type="tel">
+                <input type="tel" name="phone">
             </div>
             <div class="form-group">
                 <label data-en="Message" data-fr="Message">Message</label>
-                <textarea required></textarea>
+                <textarea name="message" required></textarea>
             </div>
             <button type="submit" class="btn" data-en="Send Message" data-fr="Envoyer le message">Envoyer le
                 message</button>

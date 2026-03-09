@@ -38,7 +38,19 @@
     "priceRange": "$$",
     "menu": "https://lamaisondeswraps.com/menu.html"
   }
-  </script>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lamaisondeswraps.com/">
+  <meta property="og:title" content="La Maison des Wraps | Drummondville">
+  <meta property="og:description" content="Découvrez la restauration rapide indienne authentique à La Maison des Wraps. Wraps faits maison, sur place et à emporter.">
+  <meta property="og:image" content="https://lamaisondeswraps.com/assets/hero_plate.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://lamaisondeswraps.com/">
+  <meta property="twitter:title" content="La Maison des Wraps | Drummondville">
+  <meta property="twitter:description" content="Découvrez la restauration rapide indienne authentique à La Maison des Wraps. Wraps faits maison, sur place et à emporter.">
+  <meta property="twitter:image" content="https://lamaisondeswraps.com/assets/hero_plate.jpg">
 </head>
 
 <body>
@@ -215,8 +227,11 @@
       data-fr="Abonnez-vous à notre infolettre et soyez le premier à connaître les nouveautés au menu, les spéciaux de la semaine et les offres exclusives aux abonnés. De la bonne nourriture et de belles économies — livrées chez vous.">
       Abonnez-vous à notre infolettre et soyez le premier à connaître les nouveautés au menu, les spéciaux de la semaine
       et les offres exclusives aux abonnés. De la bonne nourriture et de belles économies — livrées chez vous.</p>
-    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
-      <input type="email" placeholder="Votre courriel / Your email" required>
+    <form class="newsletter-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+      <input type="hidden" name="subject" value="New Newsletter Subscription (La Maison des Wraps)">
+      <input type="hidden" name="redirect" value="https://lamaisondeswraps.com/index.html">
+      <input type="email" name="email" placeholder="Votre courriel / Your email" required>
       <button type="submit" class="btn" data-en="Subscribe — It's Free" data-fr="S'abonner — c'est gratuit">S'abonner —
         c'est gratuit</button>
     </form>

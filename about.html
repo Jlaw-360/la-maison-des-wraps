@@ -88,16 +88,30 @@
             text-align: center;
         }
 
-        .mv-card h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
+        @media (max-width: 768px) {
+            .story-section {
+                flex-direction: column;
+            }
 
-        .mv-card p {
-            color: var(--color-gray);
-            font-size: 1.1rem;
+            .mission-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lamaisondeswraps.com/about.html">
+    <meta property="og:title" content="À propos | La Maison des Wraps | Drummondville">
+    <meta property="og:description" content="Découvrez l'histoire de La Maison des Wraps — le meilleur restaurant de restauration rapide indienne à Drummondville. Fait frais, plein de saveurs, ouvert 6 jours sur 7.">
+    <meta property="og:image" content="https://lamaisondeswraps.com/assets/new_featured_butter_chicken.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://lamaisondeswraps.com/about.html">
+    <meta property="twitter:title" content="À propos | La Maison des Wraps | Drummondville">
+    <meta property="twitter:description" content="Découvrez l'histoire de La Maison des Wraps — le meilleur restaurant de restauration rapide indienne à Drummondville. Fait frais, plein de saveurs, ouvert 6 jours sur 7.">
+    <meta property="twitter:image" content="https://lamaisondeswraps.com/assets/new_featured_butter_chicken.jpg">
 </head>
 
 <body>
